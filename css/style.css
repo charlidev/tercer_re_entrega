@@ -1,0 +1,97 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  height: 45px;
+  padding: 10px 30px;
+}
+.navBar .imgLogo {
+  width: 200px;
+}
+.navBar ul {
+  display: flex;
+}
+.navBar ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+.navBar a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #2f8c93;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.navBar a img {
+  width: 30px;
+}
+.navBar a:hover {
+  color: #f6a800;
+  font-weight: 550;
+  background-size: 100% 2px;
+}
+
+.divcontainer {
+  display: flex;
+  flex-direction: column;
+}
+.divcontainer .div1, .divcontainer .div2, .divcontainer .div3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.divcontainer img {
+  width: 400px;
+  height: 300px;
+  transition: all 400ms ease;
+  border-radius: 30px;
+}
+.divcontainer img:hover {
+  box-shadow: 5px 5px 20px black;
+  transform: translateY(-3%);
+}
+.divcontainer .divparrafo {
+  width: 100%;
+  padding: 30px;
+  font-size: 20px;
+  background-color: aliceblue;
+  border-radius: 60px;
+}
+@media (max-width: 992px) {
+  .divcontainer .div1, .divcontainer .div2, .divcontainer .div3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
